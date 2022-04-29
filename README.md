@@ -13,7 +13,7 @@ against those computed by a ConvNet on landmark architectures for different laye
 and at different iterations of the training procedure. 
 
 
-#### Further Reading
+### Further Reading
 The filters have been computed from https://github.com/cjones6/yesweckn which is the code supporting the following paper.
 ```
 @article{JRH2019,
