@@ -1,15 +1,15 @@
-# Convolutional Kernel Networks versus Convolutional Neural Networks
-Convolutional kernel networks, first introduced by Mairal et al. (2014) and further developed by Mairal (2016) and Paulin et al. (2017), 
+# CKNs versus ConvNets
+Convolutional Kernel Networks (CKNs), first introduced by Mairal et al. (2014) and further developed by Mairal (2016) and Paulin et al. (2017), 
 allow one to learn feature representations for images or signals in an unsupervised or in a supervised manner. 
-In our [paper](https://arxiv.org/pdf/1903.08131.pdf), we describe a systematic way to transform a ConvNet into a CKN. 
+In our [paper](https://arxiv.org/pdf/1903.08131.pdf), we describe a systematic way to transform a Convolutional Neural Network (ConvNet) into a CKN. 
 Moreover, we develop an end-to-end training algorithm for CKNs and demonstrate that CKNs can often achieve comparable performance 
 to their ConvNet counterparts. 
 
 The code presented in https://github.com/cjones6/yesweckn implements CKNs for images and other 
 data observed on a grid and trains them using a stochastic gradient optimization method with an accurate gradient. 
 
-The present repository presents an interactive visualization of the filters computed by a Convolutional Kernel Network 
-against those computed by a Convolutional Neural Network on landmark architectures for different layers 
+The present repository presents an interactive visualization of the filters computed by a CKN
+against those computed by a ConvNet on landmark architectures for different layers 
 and at different iterations of the training procedure. 
 
 
