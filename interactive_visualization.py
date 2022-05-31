@@ -26,7 +26,7 @@ layer = st.sidebar.slider('Layer', 1, nb_layers, step=1)
 def plot_filters(filters, nfigs=None):
     if nfigs is None:
         nfigs = filters.shape[0]
-    ncol = int(np.sqrt(nfigs) +1)
+    ncol = int(np.sqrt(nfigs))
     nrow = int(np.ceil(nfigs / ncol))
 
     fig = plt.figure(figsize=(ncol, nrow))
@@ -53,7 +53,7 @@ def visualize_filters(architecture, network_type, layer_idx, iteration=10000):
     dir_name = os.path.dirname(os.path.abspath(__file__))
     path_filters = os.path.join(dir_name, f'filters/{architecture}_{network_type}_{layer_idx}_{iteration}.pickle')
     filters = pickle.load(open(path_filters, 'rb'))
-    fig = plot_filters(filters, 32)
+    fig = plot_filters(filters, 25)
     return fig
 
 

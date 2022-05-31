@@ -10,7 +10,12 @@ data observed on a grid and trains them using a stochastic gradient optimization
 
 The present repository presents an interactive visualization of the filters computed by a CKN
 against those computed by a ConvNet on landmark architectures for different layers 
-and at different iterations of the training procedure. 
+and at different iterations of the training procedure. The filters have been sampled from each layer using a
+ determinantal
+ point process (DPP) to extract the most diverse and representative filters using a Gaussian similarity kernel. The
+  DPP is implemented
+  using [DDPy
+ ](https://dppy.readthedocs.io/en/latest/).
 
 
 ### Further Reading
